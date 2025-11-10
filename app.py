@@ -19,10 +19,6 @@ fig_pie = px.pie(df_sr, values='sales', names='sales_region', title='Regional Sa
 fig_scatter = px.scatter(df_genre, x='na_sales', y='critic_score', color='release_year', hover_data=['title', 'release_year'], title='Sales vs Critic Scores')
 
 fig_dot = px.scatter(title="Average Sales in Each Genre")
-fig_dot.add_trace(px.scatter(df_grouped, x=df_grouped.index, y='total_sales', color_discrete_sequence=['red']).data[0])
-fig_dot.add_trace(px.scatter(df_grouped, x=df_grouped.index, y='na_sales', color_discrete_sequence=['blue']).data[0])
-fig_dot.update_traces(marker=dict(size=10))
-
 
 app.layout = html.Div(children=[
     html.H1(children='Video Game Sales Dashboard',
@@ -41,6 +37,10 @@ app.layout = html.Div(children=[
 
 
 # add functions here
+
+fig_dot.add_trace(px.scatter(df_grouped, x=df_grouped.index, y='total_sales', color_discrete_sequence=['red']).data[0])
+fig_dot.add_trace(px.scatter(df_grouped, x=df_grouped.index, y='na_sales', color_discrete_sequence=['blue']).data[0])
+fig_dot.update_traces(marker=dict(size=10))
 
 # DO NOT EDIT BELOW THIS LINE (except to change `jupyter_height`)
 
