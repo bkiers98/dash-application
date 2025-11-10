@@ -1,5 +1,4 @@
 dash==3.2.0
-python
 numpy
 pandas
 plotly
