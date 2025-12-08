@@ -63,7 +63,7 @@ app.layout = html.Div(children=[
         html.H3(children='Important links:'),
         html.Ul([
             html.Li([html.A('Dataset source', href='https://mavenanalytics.io/data-playground/video-game-sales', target='_blank')]),
-            html.Li([html.A('Stream video walkthrough', href='https://www.google.com', target='_blank')]),
+            html.Li([html.A('Stream video walkthrough', href='https://indiana-my.sharepoint.com/:v:/g/personal/benoet_iu_edu/EU7VqWjtM8pErVgz89BZJqEBl0htLkhdLXbe3eTjVOGLXA?e=lCEXo3&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D', target='_blank')]),
             html.Li([html.A('Github repository', href='https://github.com/bkiers98/dash-application.git', target='_blank')])
         ])
     ], 
